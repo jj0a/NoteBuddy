@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="6dp"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="2dp"
+    android:clickable="true"
+    android:id="@+id/cardView"
+    android:foreground="?attr/selectableItemBackground"
+    android:layout_height="60dp">
+
+
+    <LinearLayout
+        android:background="@drawable/recycler_item"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/nav_folder"
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="16dp"
+                android:layout_height="30sp"
+                android:background="@android:color/transparent"
+                app:srcCompat="@drawable/baseline_folder_24" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:text="Bangladesh"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:id="@+id/folderTitle"
+                android:layout_height="wrap_content"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
